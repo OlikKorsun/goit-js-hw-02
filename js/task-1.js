@@ -1,11 +1,7 @@
 "use strict"
 
-let quantity;
-let pricePerDroid;
-let customerCredits;
-let sumAllDriod;
-
 function makeTransaction(quantity, pricePerDroid, customerCredits) {
+    let sumAllDriod;
     sumAllDriod = quantity * pricePerDroid;
     if (sumAllDriod <= customerCredits) {
         return `You ordered ${quantity} droids worth ${sumAllDriod} credits!`;
